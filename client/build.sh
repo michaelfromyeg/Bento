@@ -11,3 +11,5 @@ echo "https://bento.michaeldemar.co" > dist/CNAME
 cp -r assets dist
 cp app.css dist
 cp index.html dist
+
+echo "Build complete!"
