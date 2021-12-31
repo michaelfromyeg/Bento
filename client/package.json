@@ -12,6 +12,6 @@
     },
     "scripts": {
         "format": "prettier . --write",
-        "publish": "gh-pages ."
+        "deploy": "gh-pages -d ."
     }
 }
