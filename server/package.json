@@ -4,9 +4,10 @@
     "description": "Backend for my custom Bento box.",
     "main": "server.js",
     "scripts": {
-        "start": "fastify start -l info src/app.js",
+        "start": "fastify start -a 0.0.0.0 -l info src/app.js",
         "dev": "fastify start -l info -P src/app.js",
         "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "cd ..; git subtree push --prefix server heroku main",
         "format": "prettier . --write"
     },
     "author": "Michael DeMarco <michaelfromyeg@gmail.com>",
@@ -20,5 +21,8 @@
     "devDependencies": {
         "@tsconfig/node16": "^1.0.2",
         "@types/node": "^17.0.5"
+    },
+    "engines": {
+        "node": "16.13.1"
     }
 }
