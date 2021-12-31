@@ -19,7 +19,7 @@ const getWeather = async (latitude, longitude, unit, language) => {
     if (response.status !== 200) {
         console.error({
             timestamp: new Date(),
-            response
+            response,
         });
 
         return {
@@ -29,7 +29,7 @@ const getWeather = async (latitude, longitude, unit, language) => {
             },
             description: "",
             iconId: null,
-        }
+        };
     }
 
     const data = await response.json();
@@ -50,5 +50,5 @@ const getWeather = async (latitude, longitude, unit, language) => {
 };
 
 module.exports = {
-    getWeather
-}
+    getWeather,
+};
