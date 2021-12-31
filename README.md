@@ -1,5 +1,6 @@
-![image](assets/img/header.png)
+# Bento
 
+![image](assets/img/header.png)
 
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
@@ -8,33 +9,34 @@
 
   <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a> 
+  </a>
 
   <a href="https://github.com/migueravila/Bento/blob/master/README-ES-MX.md" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/spanish.png" alt="live-preview" height="35px" />
-  </a> 
+  </a>
 </p>
 
 <br />
 
 ## 👇 Index
-- [👇 Index](#-index)
-- [✨ Features](#-features)
-- [🚀 Usage](#-usage)
+
+- [Bento](#bento)
+  - [👇 Index](#-index)
+  - [✨ Features](#-features)
+  - [🚀 Usage](#-usage)
     - [As Home Page](#as-home-page)
     - [As New Tab](#as-new-tab)
-- [🎨 Customization](#-customization)
-  - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
-  - [🏷️ Button Links](#️-button-links)
-  - [📑 List Links](#-list-links)
-  - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
-  - [💛 Colors](#-colors)
-
+  - [🎨 Customization](#-customization)
+    - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
+    - [🏷️ Button Links](#️-button-links)
+    - [📑 List Links](#-list-links)
+    - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
+    - [💛 Colors](#-colors)
 
 ## ✨ Features
 
 - **Easy configuration** file.
-- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.
+- **Dark/Light** mode, you can toggle them and it'll be saved in local storage.
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
 - **Variables** for custom colors and font sizes in the `style.css` code.
@@ -43,16 +45,16 @@
 
 ## 🚀 Usage
 
-#### As Home Page
+### As Home Page
 
 1. Fork this repo
 2. Enable the Github Pages service `Settings > GitHub Pages > Source [master branch] > Save`
 3. Set it as Home Page:
-   - Click the menu button. and select Options. Preferences.
-   - Click the Home panel.
-   - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
+    - Click the menu button. and select Options. Preferences.
+    - Click the Home panel.
+    - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
 
-#### As New Tab
+### As New Tab
 
 You can use different Add-ons/Extensions for it
 
@@ -83,7 +85,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 > You cah change the background by substituting the `background.jpg` file in `assets` folder.
 
-![](assets/img/previewbg.png)
+![Preview changing the background.](assets/img/previewbg.png)
 
 ### 🏷️ Button Links
 
@@ -182,11 +184,11 @@ The same happens with the list links, you can change the list icon (also using f
 
 ### ⛈️ Weather: Api Key, Icons and Unit
 
-For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
+For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them.
 
 Finally, choose an Icon set:
 
-![](assets/img/icons.png)
+![Examples of different icons](assets/img/icons.png)
 
 - **Nord** Using the Nord Color Scheme and easy-to-eyes colors
 - **OneDark** (_Default one_) Using the One Dark Pro color scheme
@@ -212,22 +214,22 @@ In the `app.css` file you can change the variables for both themes (Dark and Lig
 /* Light theme  */
 
 :root {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
+    --accent: #61b0f1; /* Hover color */
+    --bg: #f5f5f5; /* Background color */
+    --sbg: #e4e6e6; /* Cards color */
+    --fg: #3a3a3a; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
 }
 
 /* Dark theme  */
 
 .darktheme {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+    --accent: #61b0f1; /* Hover color */
+    --bg: #19171a; /* Background color */
+    --sbg: #201e21; /* Cards color */
+    --fg: #d8dee9; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
 }
 ```
 
-![](assets/img/subheader.png)
+![Bento box in action](assets/img/subheader.png)
