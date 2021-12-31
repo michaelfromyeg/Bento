@@ -26,8 +26,12 @@ module.exports = async (fastify, opts) => {
                 return;
             }
 
+            // For cert verification
+            cb(null, true);
+
             // Generate an error on other origins, disabling access
-            cb(new Error("Not allowed"));
+            // Disable CORS temporarily!
+            // cb(new Error("Not allowed"));
         },
     });
 
