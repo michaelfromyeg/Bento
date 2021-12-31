@@ -1,6 +1,18 @@
-const { getWeather } = require("./weather");
+const path = require("path/posix");
+const { getWeather } = require("./src/weather");
 
 module.exports = async (fastify, opts) => {
+    /**
+     *
+     */
+    fastify.register(require("fastify-static"), {
+        root: path.join(__dirname, "public"),
+        prefix: "/",
+    })
+
+    /**
+     * Enable CORS for localhost and my personal domain.
+     */
     fastify.register(require("fastify-cors"), {
         origin: (origin, cb) => {
             console.log({
