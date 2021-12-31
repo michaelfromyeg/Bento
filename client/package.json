@@ -12,7 +12,7 @@
     },
     "scripts": {
         "format": "prettier . --write",
-        "prepublish": "bash build.sh",
-        "publish": "gh-pages -d dist"
+        "build": "bash build.sh",
+        "deploy": "npm run build && gh-pages -d dist"
     }
 }
