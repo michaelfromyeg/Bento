@@ -41,7 +41,9 @@ const setPosition = () => {
 };
 
 const getWeather = (latitude, longitude, unit, language) => {
-    let api = `http://127.0.0.1:3000/weather?latitude=${latitude}&longitude=${longitude}&unit=${unit}&language=${language}`
+    // TODO: set baseUrl via variable from config; modify in build step
+    let baseUrl = false ? "http://localhost:3000" : "https://bento.michaeldemar.co"
+    let api = `${baseUrl}/api/weather?latitude=${latitude}&longitude=${longitude}&unit=${unit}&language=${language}`
 
     fetch(api)
         .then((response) => {

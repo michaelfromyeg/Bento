@@ -8,8 +8,8 @@ module.exports = async (fastify, opts) => {
                 origin,
             })
 
-            if (/localhost/.test(origin)) {
-                //  Request from localhost will pass
+            if (/localhost/.test(origin) || /michaeldemar\.co/.test(origin)) {
+                // Request from localhost or personal homepage will pass
                 cb(null, true)
                 return
             }
@@ -24,7 +24,7 @@ module.exports = async (fastify, opts) => {
      */
     fastify.route({
         method: "GET",
-        url: "/weather",
+        url: "/api/weather",
         schema: {
             querystring: {
                 type: 'object',
