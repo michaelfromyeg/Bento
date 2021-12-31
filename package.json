@@ -1,0 +1,17 @@
+{
+    "name": "bento",
+    "version": "1.2.0",
+    "description": "Hackable start page inspired by the Bento box",
+    "author": "Miguel Ávila; amended by Michael DeMarco <michaelfromyeg@gmail.com>",
+    "homepage": "https://github.com/migueravila/Bento",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "eslint": "^8.5.0",
+        "gh-pages": "^3.2.3",
+        "prettier": "^2.5.1"
+    },
+    "scripts": {
+        "format": "prettier . --write",
+        "deploy": "gh-pages -d ."
+    }
+}
