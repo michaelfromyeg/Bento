@@ -20,5 +20,8 @@
         "trello",
         "UBC's"
     ],
+    "files.associations": {
+        "CNAME": "plaintext"
+    },
     "files.insertFinalNewline": true
 }

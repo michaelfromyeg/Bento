@@ -2,8 +2,8 @@
     "name": "bento",
     "version": "1.2.0",
     "description": "Hackable start page inspired by the Bento box",
-    "author": "Miguel Ávila; amended by Michael DeMarco <michaelfromyeg@gmail.com>",
-    "homepage": "https://github.com/migueravila/Bento",
+    "author": "Miguel Ávila; Michael DeMarco <michaelfromyeg@gmail.com>",
+    "homepage": "https://bento.michaeldemar.co",
     "license": "GPL-3.0",
     "devDependencies": {
         "eslint": "^8.5.0",
