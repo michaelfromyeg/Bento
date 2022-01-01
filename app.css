@@ -16,7 +16,7 @@
     --sfg: #3a3a3a; /* Secondary Foreground color */
 
     /* Image background  */
-    --img-bg: url(assets/background.jpg);
+    --img-bg: url(assets/background.png);
     --img-col: linear-gradient(
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.7)
@@ -25,14 +25,15 @@
 
 /* Dark theme  */
 .darktheme {
-    --accent: #61b0f1; /* Hover color */
-    --bg: #19171a; /* Background color */
+    --accent: #98971a; /* Hover color */
+    --bg: #282828; /* Background color */
     --sbg: #201e21; /* Cards color */
-    --fg: #d8dee9; /* Foreground color */
-    --sfg: #3a3a3a; /* Secondary Foreground color */
+    --sbg: #1d2021;
+    --fg: #ebdbb2; /* Foreground color */
+    --sfg: #504945; /* Secondary Foreground color */
     --img-col: linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
     ); /* Filter color */
 }
 
