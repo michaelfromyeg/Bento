@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 const CONFIG = {
     name: "Michael",
     imageBackground: true,
-    openInNewTab: true,
+    openInNewTab: false,
     twelveHourFormat: false,
     greetingMorning: "Good morning,",
     greetingAfternoon: "Good afternoon,",
@@ -13,7 +14,7 @@ const CONFIG = {
     trackLocation: false,
     // UBC's coordinates!
     defaultLatitude: 49.267941,
-    defaultLongitude: -123.247360,
+    defaultLongitude: -123.24736,
     cards: [
         {
             id: "1",
@@ -45,12 +46,11 @@ const CONFIG = {
             icon: "github",
             link: "https://github.com",
         },
-        // TODO: find a better one-stop reading resource... use RSS?
         {
             id: "6",
-            name: "Hacker News",
+            name: "Feedly",
             icon: "book-open",
-            link: "https://news.ycombinator.com",
+            link: "https://feedly.com",
         },
     ],
     firstListIcon: "headphones",
