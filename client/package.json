@@ -11,6 +11,9 @@
         "prettier": "^2.5.1"
     },
     "scripts": {
+        "start": "bash start.sh",
+        "dev": "echo \"Use `npm start`!\" && npm start",
+        "lint": "eslint . --fix",
         "format": "prettier . --write",
         "build": "bash build.sh",
         "deploy": "npm run build && gh-pages -d dist"

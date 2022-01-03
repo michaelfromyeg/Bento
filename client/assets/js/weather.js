@@ -11,17 +11,18 @@ weather.temperature = {
 
 const unit = CONFIG.weatherUnit;
 
-const KELVIN = 273.15;
-
-const key = `${CONFIG.weatherKey}`;
-
 const setPosition = () => {
     if (!CONFIG.trackLocation || !navigator.geolocation) {
         if (CONFIG.trackLocation) {
             console.error("Geolocation not available");
         }
 
-        getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude, CONFIG.weatherUnit, CONFIG.language);
+        getWeather(
+            CONFIG.defaultLatitude,
+            CONFIG.defaultLongitude,
+            CONFIG.weatherUnit,
+            CONFIG.language
+        );
         return;
     }
 
@@ -30,20 +31,29 @@ const setPosition = () => {
             getWeather(
                 pos.coords.latitude.toFixed(3),
                 pos.coords.longitude.toFixed(3),
-                CONFIG.language, CONFIG.weatherUnit
+                CONFIG.language,
+                CONFIG.weatherUnit
             );
         },
         (err) => {
             console.error(err);
-            getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude, CONFIG.weatherUnit, CONFIG.language);
+            getWeather(
+                CONFIG.defaultLatitude,
+                CONFIG.defaultLongitude,
+                CONFIG.weatherUnit,
+                CONFIG.language
+            );
         }
     );
 };
 
 const getWeather = (latitude, longitude, unit, language) => {
     // TODO: set baseUrl via variable from config; modify in build step
-    let baseUrl = false ? "http://localhost:3000" : "http://api.bento.michaeldemar.co"
-    let api = `${baseUrl}/api/weather?latitude=${latitude}&longitude=${longitude}&unit=${unit}&language=${language}`
+    // eslint-disable-next-line no-constant-condition
+    let baseUrl = false
+        ? "http://localhost:3000"
+        : "http://api.bento.michaeldemar.co";
+    let api = `${baseUrl}/api/weather?latitude=${latitude}&longitude=${longitude}&unit=${unit}&language=${language}`;
 
     fetch(api)
         .then((response) => {

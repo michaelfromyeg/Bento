@@ -19,8 +19,8 @@ const displayClock = () => {
     const mm = monthNames[d.getMonth()];
     const dd = d.getDate();
     const min = (mins = ("0" + d.getMinutes()).slice(-2));
-    const hh = d.getHours();
-    const ampm = "";
+    let hh = d.getHours();
+    let ampm = "";
 
     // Hour format
     if (CONFIG.twelveHourFormat) {

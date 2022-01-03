@@ -1,6 +1,6 @@
 let darkTheme = localStorage.getItem("darkTheme");
 const themeToggle = document.querySelector("#themeButton");
-const bodyBackground = document.getElementById("#body");
+// const bodyBackground = document.getElementById("#body");
 
 const enableDark = () => {
     document.body.classList.add("darktheme");
