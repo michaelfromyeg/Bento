@@ -53,25 +53,25 @@ const CONFIG = {
             link: "https://feedly.com",
         },
     ],
-    firstListIcon: "headphones",
+    firstListIcon: "zap",
     secondListIcon: "send",
     lists: {
         firstList: [
             {
-                name: "Instrumental Study",
-                link: "https://open.spotify.com/playlist/37i9dQZF1DX9sIqqvKsjG8?si=dd521232b86643f5",
+                name: "Twitter",
+                link: "https://twitter.com",
             },
             {
-                name: "Jazz for Study",
-                link: "https://open.spotify.com/playlist/37i9dQZF1DX3SiCzCxMDOH?si=5496fd6ae29e4dac",
+                name: "Hacker News",
+                link: "https://news.ycombinator.com",
             },
             {
-                name: "All-Nighter",
-                link: "https://open.spotify.com/playlist/37i9dQZF1DX692WcMwL2yW?si=f5944857f59249c3",
+                name: "New York Times",
+                link: "https://nytimes.com",
             },
             {
-                name: "Jazz Classics Blue Note Edition",
-                link: "https://open.spotify.com/playlist/37i9dQZF1DWTR4ZOXTfd9K?si=b7e1c19f4d9a476f",
+                name: "Spotify",
+                link: "https://open.spotify.com",
             },
         ],
         secondList: [
