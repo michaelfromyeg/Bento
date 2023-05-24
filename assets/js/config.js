@@ -47,10 +47,10 @@ const CONFIG = {
             link: "https://github.com",
         },
         {
+            name: "Spotify",
+            link: "https://open.spotify.com",
             id: "6",
-            name: "Feedly",
-            icon: "book-open",
-            link: "https://feedly.com",
+            icon: "music",
         },
     ],
     firstListIcon: "zap",
@@ -70,8 +70,8 @@ const CONFIG = {
                 link: "https://nytimes.com",
             },
             {
-                name: "Spotify",
-                link: "https://open.spotify.com",
+                name: "Feedly",
+                link: "https://feedly.com",
             },
         ],
         secondList: [
@@ -89,7 +89,7 @@ const CONFIG = {
             },
             {
                 name: "Zoom",
-                link: "https://ubc.zoom.us/j/5806809634?pwd=RWdKK1ZiZkZ5NkEwT2h4Mm5pWGpHQT09",
+                link: "https://ubc.zoom.us/j/7806809634",
             },
         ],
     },
