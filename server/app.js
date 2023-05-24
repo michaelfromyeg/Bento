@@ -3,7 +3,7 @@ const { getWeather } = require("./src/weather");
 
 module.exports = async (fastify, opts) => {
     /**
-     *
+     * Make static files accessible.
      */
     fastify.register(require("fastify-static"), {
         root: path.join(__dirname, "public"),

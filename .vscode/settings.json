@@ -1,34 +1,6 @@
 {
-    "cSpell.enabled": true,
-    "cSpell.words": [
-        "akhileshns",
-        "ampm",
-        "appdir",
-        "Ávila",
-        "bento",
-        "darkfg",
-        "darktheme",
-        "Dribbble",
-        "fastify",
-        "Feedly",
-        "FOUC",
-        "fses",
-        "interwebs",
-        "lucide",
-        "mdema",
-        "michaeldemar",
-        "michaelfromyeg",
-        "Nord",
-        "Odysee",
-        "peaceiris",
-        "previewbg",
-        "Todoist",
-        "trello",
-        "UBC's"
-    ],
     "files.associations": {
-        "CNAME": "plaintext",
-        "P7EIC8dzT_ff6L5PDGPaRLPO3pJidpZKZcV0RwmTLu4": "plaintext"
+        "CNAME": "plaintext"
     },
     "files.insertFinalNewline": true
 }

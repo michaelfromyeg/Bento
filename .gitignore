@@ -1,3 +1,9 @@
+### Custom
+
+.env
+
+### Node.gitignore
+
 # Logs
 logs
 *.log

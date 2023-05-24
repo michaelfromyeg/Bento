@@ -1,25 +1,25 @@
 name: Server
 
 on:
-    push:
-        branches:
-            - main
-    pull_request:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 env:
-    CI: true
+  CI: true
 
 jobs:
-    deploy:
-        runs-on: ubuntu-20.04
-        steps:
-            - uses: actions/checkout@v2
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
 
-            - uses: akhileshns/heroku-deploy@v3.12.12
-              with:
-                  heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                  heroku_app_name: "michaelfromyeg-bento"
-                  heroku_email: "michaelfromyeg@gmail.com"
-                  appdir: "server"
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "michaelfromyeg-bento"
+          heroku_email: "michaelfromyeg@gmail.com"
+          appdir: "server"
