@@ -52,7 +52,7 @@ const getWeather = (latitude, longitude, unit, language) => {
     // eslint-disable-next-line no-constant-condition
     let baseUrl = false
         ? "http://localhost:3000"
-        : "http://api.bento.michaeldemar.co";
+        : "https://api.bento.michaeldemar.co";
     let api = `${baseUrl}/api/weather?latitude=${latitude}&longitude=${longitude}&unit=${unit}&language=${language}`;
 
     fetch(api)
