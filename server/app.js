@@ -20,17 +20,22 @@ module.exports = async (fastify, opts) => {
                 origin,
             });
 
-            if (/localhost/.test(origin) || /michaeldemar\.co/.test(origin)) {
-                // Request from localhost or personal homepage will pass
-                cb(null, true);
-                return;
-            }
+            cb(null, true);
+
+            // TODO(michaelfromyeg): origin is undefined (https://github.com/fastify/fastify-cors/issues/236)
+            //                       bring back when fixed!
+            // if (/localhost/.test(origin) || /michaeldemar\.co/.test(origin)) {
+            //     // Request from localhost or personal homepage will pass
+            //     cb(null, true);
+            //     return;
+            // }
 
             // For cert verification
             // cb(null, true);
 
+            // TODO: see above comment; bring back... eventually!
             // Generate an error on other origins, disabling access
-            cb(new Error("Not allowed"));
+            // cb(new Error("Not allowed"));
         },
     });
 

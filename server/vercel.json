@@ -1,6 +1,0 @@
-{
-    "buildCommand": null,
-    "devCommand": "npm dev",
-    "framework": null,
-    "rewrites": [{ "source": "/(.*)", "destination": "/app.js" }]
-}
